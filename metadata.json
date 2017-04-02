@@ -1,12 +1,12 @@
 {
-  "name": "cprice404-grafanadash",
-  "version": "0.0.6",
-  "source": "git clone https://github.com/cprice404/puppet-grafanadash",
-  "author": "Chris Price",
+  "name": "suckatrash-grafanadash",
+  "version": "0.0.7",
+  "source": "git clone https://github.com/suckatrash/puppet-grafanadash.git",
+  "author": "Erik Hansen",
   "license": "Mozilla Public License Version 2.0",
   "summary": "Grafana Dashboard module",
   "description": "Installs graphite and grafana",
-  "project_page": "https://github.com/cprice404/puppet-grafanadash",
+  "project_page": "https://github.com/suckatrash/puppet-grafanadash.git",
 
   "dependencies": [
     { "name": "dwerder/graphite", "version_requirement": "5.16.1" },

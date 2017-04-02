@@ -17,6 +17,18 @@ class grafanadash::dev() {
 
   class { 'graphite':
      gr_web_cors_allow_from_all => true,
+     gr_storage_schemas         => [
+        {
+          name       => 'carbon',
+          pattern    => '^carbon\.',
+          retentions => '1m:90d'
+        },
+        {
+          name       => 'default',
+          pattern    => '.*',
+          retentions => '10s:1d,5m:5d,1d:2y'
+        }
+      ],
   } ->
 
   class { 'elasticsearch':

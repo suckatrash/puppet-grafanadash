@@ -9,9 +9,9 @@
   "project_page": "https://github.com/suckatrash/puppet-grafanadash.git",
 
   "dependencies": [
-    { "name": "dwerder/graphite", "version_requirement": "5.16.1" },
-    { "name": "gini/archive", "version_requirement": "0.2.0" },
-    { "name": "stahnma/epel", "version_requirement": "0.0.6" },
-    { "name": "elasticsearch/elasticsearch", "version_requirement": "0.3.2"}
+    { "name": "dwerder/graphite", "version_requirement": "7.0.0" },
+    { "name": "gini/archive", "version_requirement": "0.2.1" },
+    { "name": "stahnma/epel", "version_requirement": "1.2.2" },
+    { "name": "elasticsearch/elasticsearch", "version_requirement": "0.16.2"}
   ]
 }

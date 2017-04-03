@@ -1,6 +1,7 @@
 class grafanadash::grafana::params {
-  $version            = '1.5.4'
-  $download_url       = "http://grafanarel.s3.amazonaws.com/grafana-${version}.tar.gz"
+  $version            = '4.2.0'
+  #$download_url       = "http://grafanarel.s3.amazonaws.com/grafana-${version}.tar.gz"
+  $download_url       = "https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-${version}.linux-x64.tar.gz"
   $install_dir        = '/opt'
   $symlink            = true
   $symlink_name       = "${install_dir}/grafana"

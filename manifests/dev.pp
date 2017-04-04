@@ -7,6 +7,12 @@ class grafanadash::dev() {
     ensure => 'stopped',
   }
 
+  class{'archive::prerequisites':}
+
+  package { 'curl':
+    ensure => present,
+  }
+  
   $es_config_hash = {}
 
   package { 'cronie':

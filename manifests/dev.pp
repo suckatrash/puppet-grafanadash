@@ -8,10 +8,6 @@ class grafanadash::dev() {
   }
 
   class{'archive::prerequisites':}
-
-  package { 'curl':
-    ensure => present,
-  }
   
   $es_config_hash = {}
 

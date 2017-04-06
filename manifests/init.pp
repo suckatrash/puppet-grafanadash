@@ -1,5 +1,8 @@
 class grafanadash {
 
+## Want to add a datasource with this and the exec below and need to hack on this some more
+#$commandfile = '/root/sql.sql'
+
   class { 'epel': } ->
 
   class { 'graphite':
@@ -17,6 +20,12 @@ class grafanadash {
         }
       ],
   } ->
+  
+#  exec { "add graphite datasource":
+#    command => "cat ${commandfile} | sqlite3 /var/lib/grafana/grafana.db",
+#    path        => '/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin',
+#    refreshonly => true,
+#  }->
 
   class { 'elasticsearch':
     java_install => true,
